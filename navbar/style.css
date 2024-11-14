@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+nav {
+    background-color: #364652;
+}
+
+nav * {
+    color: #F2F4F8;
+}
+
+nav .navbar__container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .navbar__container .navbar__menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+nav .navbar__container .navbar__menu .navbar__menu-item a {
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+nav .navbar__container .navbar__menu .navbar__menu-item a:hover {
+    color: #2275ea;
+}
+
+nav .navbar__container .navbar__actions{
+    display: flex;
+    gap: 20px;
+}
+
+nav .navbar__container .navbar__actions button {
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+nav .navbar__container .navbar__actions button:hover {
+    color: #2275ea;
+}
+nav .navbar__container .navbar__logo img {
+    height: 32px;
+    width: 32px;
+}
