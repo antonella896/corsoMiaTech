@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body { background-color: rgba(62, 61, 61); }
+
+:root {
+    --container-max-width: 1120px;
+    --card-max-width: 300px;
+    --card-padding: 15px 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Inter', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+nav .navbar__container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+nav .navbar__container .navbar__nome span{
+    color: rgb(146, 23, 23);
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 530px;
+}
+
+nav .navbar__container .navbar__actions{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: right;
+    gap: 15px;
+}
+
+
+
+nav .navbar__container .navbar__actions .navbar__actions-item button{
+    cursor: pointer;
+    color: rgb(234, 233, 232);
+    transition: all ease-in-out 0.25s;
+}
+
+nav .navbar__container .navbar__actions .navbar__actions-item button:hover{
+    
+    color: #5b7dad;
+}
+
+.titolo h1 {
+    
+    margin:bottom 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+main {
+    width: 100%;
+}
+
+main .card__container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+main .card__container .card {
+    width: var(--card-max-width);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+main .card__container .card .card__head img {
+    width: 100%;
+    height: auto;
+}
+
+main .card__container .card .card__head2 img {
+    height: 204px;
+    width: 300px;
+}
+
+main .card__container .card .card__body {
+    padding: var(--card-padding);
+}
+
+main .card__container .card .card__body h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main .card__container .card .card__body p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+main .card__container .card .card__footer {
+    padding: var(--card-padding);
+    text-align: left;
+}
+
+main .card__container .card .card__footer button {
+    padding: 15px 15px;
+    background-color: rgba(164, 157, 157, 0.799);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all ease-in-out 0.25s;
+}
+
+main .card__container .card .card__footer button:hover{
+    color: #f4f4f4;
+
+}
+
